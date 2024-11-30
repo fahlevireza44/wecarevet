@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WCareVet</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="images/logo.webp" alt="Logo" style="height: 50px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown">
+                            Services
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+                            <li><a class="dropdown-item" href="#our-services">Our Services</a></li>
+                            <li><a class="dropdown-item" href="#our-grooming">Our Grooming</a></li>
+                            <li><a class="dropdown-item" href="#our-visit">Our Visit</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-wrap js-fullheight" style="background-image: url('images/home_2.webp'); height: 100vh; background-size: cover; background-position: center;" data-stellar-background-ratio="0.5">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row no-gutters slider-text js-fullheight align-items-center" data-scrollax-parent="true">
+                <div class="col-lg-6 pt-md-5 ftco-animate">
+                    <div class="mt-5">
+                        <h1 class="mb-4 font-weight-bold title">Solusi Tepat Permasalahan Dan Kebutuhan Anabul Kesayangan Anda</h1>
+                        <p class="mb-4 desc">
+                            FAKTANYA, kita semua tahu bahwa mencegah lebih baik dari mengobati, namun tanpa kita sadari, mengobati juga merupakan solusi, jika ditangani dengan cepat dan tepat!
+                        </p>
+                        <p>
+                            <a href="tel:02154317233" target="_blank" class="btn btn-danger py-3 px-4">Emergency</a>
+                            <a href="https://api.whatsapp.com/send?phone=6281977001611&amp;text=Halo%20Dok,%20saya%20mau%20bertanya%20terkait%20pelayanan%20di%20W'Care%3F" target="_blank" class="btn btn-primary py-3 px-4">Hubungi Kami</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Services Section -->
+    <section id="our-services" class="py-5 bg-light">
+        <div class="container text-center">
+            <h2 class="mb-4">Our Services</h2>
+            <div class="row">
+                <!-- Home Visit -->
+                <div class="col-md-4 mb-4">
+                    <div class="card border-0 shadow-sm p-4">
+                        <div class="icon bg-light rounded-circle mx-auto mb-3">
+                            <i class="bi bi-house-heart-fill text-danger fs-1"></i>
+                        </div>
+                        <h5 class="fw-bold">Home Visit</h5>
+                        <p>Menjangkau seluruh area Jakarta, Tangerang dan sekitarnya, mencakup layanan lengkap dari vaksin sampai pemeriksaan umum.</p>
+                    </div>
+                </div>
+
+                <!-- Medical Services -->
+                <div class="col-md-4 mb-4">
+                    <div class="card border-0 shadow-sm p-4">
+                        <div class="icon bg-light rounded-circle mx-auto mb-3">
+                            <i class="bi bi-file-medical-fill text-danger fs-1"></i>
+                        </div>
+                        <h5 class="fw-bold">Medical Services</h5>
+                        <p>Mengatasi semua keluhan hewan peliharaan dengan layanan lengkap, aman, nyaman, langsung oleh dokter hewan berpengalaman.</p>
+                    </div>
+                </div>
+
+                <!-- Grooming -->
+                <div class="col-md-4 mb-4">
+                    <div class="card border-0 shadow-sm p-4">
+                        <div class="icon bg-light rounded-circle mx-auto mb-3">
+                            <i class="bi bi-heart-fill text-danger fs-1"></i>
+                        </div>
+                        <h5 class="fw-bold">Grooming</h5>
+                        <p>Dengan sentuhan ahli dari tim kami, Anabul anda akan merasa diurus dengan penuh perhatian dan kasih sayang.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section id="our-visit" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Our Visit</h2>
+            <p class="text-center">Schedule home visits for your pets for their convenience and comfort.</p>
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <form>
+                        <!-- Nama -->
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Nama</label>
+                            <input type="text" class="form-control" id="name" placeholder="Masukkan nama Anda" required>
+                        </div>
+                        <!-- Nomor Telepon -->
+                        <div class="mb-3">
+                            <label for="phone" class="form-label">Nomor Telepon</label>
+                            <input type="tel" class="form-control" id="phone" placeholder="Masukkan nomor telepon Anda" required>
+                        </div>
+                        <!-- Tanggal Reservasi -->
+                        <div class="mb-3">
+                            <label for="reservation-date" class="form-label">Tanggal Reservasi</label>
+                            <input type="date" class="form-control" id="reservation-date" required>
+                        </div>
+                        <!-- Waktu Reservasi -->
+                        <div class="mb-3">
+                            <label for="reservation-time" class="form-label">Waktu Reservasi (Jam)</label>
+                            <input type="time" class="form-control" id="reservation-time" required>
+                        </div>
+                        <!-- Layanan -->
+                        <div class="mb-3">
+                            <label for="service" class="form-label">Layanan</label>
+                            <select class="form-select" id="service" required>
+                                <option value="" disabled selected>Pilih Layanan</option>
+                                <option value="home-visit">Home Visit</option>
+                                <option value="medical-services">Medical Services</option>
+                                <option value="grooming">Grooming</option>
+                            </select>
+                        </div>
+                        <!-- Jenis Hewan -->
+                        <div class="mb-3">
+                            <label for="animal-type" class="form-label">Jenis Hewan</label>
+                            <input type="text" class="form-control" id="animal-type" placeholder="Masukkan jenis hewan (misal: Anjing, Kucing)" required>
+                        </div>
+                        <!-- Ras -->
+                        <div class="mb-3">
+                            <label for="breed" class="form-label">Ras</label>
+                            <input type="text" class="form-control" id="breed" placeholder="Masukkan ras hewan" required>
+                        </div>
+                        <!-- Usia -->
+                        <div class="mb-3">
+                            <label for="age" class="form-label">Usia (Tahun)</label>
+                            <input type="number" class="form-control" id="age" placeholder="Masukkan usia hewan dalam tahun" required>
+                        </div>
+                        <!-- Keluhan -->
+                        <div class="mb-3">
+                            <label for="complaint" class="form-label">Keluhan</label>
+                            <textarea class="form-control" id="complaint" rows="3" placeholder="Jelaskan keluhan hewan Anda" required></textarea>
+                        </div>
+                        <!-- Tombol Submit -->
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-primary">Kirim Reservasi</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-5 bg-light">
+        <div class="container text-center">
+            <h2 class="mb-4">Gallery</h2>
+            <p>Take a look at some moments from our veterinary care and grooming sessions.</p>
+            <!-- Add gallery images here -->
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <img src="https://via.placeholder.com/300" class="img-fluid rounded" alt="Gallery Image 1">
+                </div>
+                <div class="col-md-4">
+                    <img src="https://via.placeholder.com/300" class="img-fluid rounded" alt="Gallery Image 2">
+                </div>
+                <div class="col-md-4">
+                    <img src="https://via.placeholder.com/300" class="img-fluid rounded" alt="Gallery Image 3">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+        <div class="container text-center">
+            <h2 class="mb-4">Contact Us</h2>
+            <form>
+                <div class="row g-3">
+                    <div class="col-md-6">
+                        <input type="text" class="form-control" placeholder="Your Name" required>
+                    </div>
+                    <div class="col-md-6">
+                        <input type="email" class="form-control" placeholder="Your Email" required>
+                    </div>
+                </div>
+                <div class="mt-3">
+                    <textarea class="form-control" rows="5" placeholder="Your Message" required></textarea>
+                </div>
+                <div class="mt-3">
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-light py-5">
+        <div class="container">
+            <div class="row">
+                <!-- Logo dan Deskripsi -->
+                <div class="col-md-3">
+                    <div class="d-flex flex-column align-items-start">
+                        <img src="images/logo.webp" alt="WCare Vet Logo" class="img-fluid mb-3" style="max-width: 150px;">
+                        <p>Solusi Tepat Permasalahan Dan Kebutuhan Anabul Kesayangan Anda</p>
+                    </div>
+                </div>
+                <!-- Services -->
+                <div class="col-md-3">
+                    <h5 class="fw-bold">Services</h5>
+                    <ul class="list-unstyled mt-3">
+                        <li><a href="#" class="text-decoration-none text-dark">Poliklinik & Home Visit</a></li>
+                        <li><a href="#" class="text-decoration-none text-dark">Pemeriksaan Darah (Cek & Kimia)</a></li>
+                        <li><a href="#" class="text-decoration-none text-dark">Radiografi (X-Ray)</a></li>
+                        <li><a href="#" class="text-decoration-none text-dark">Vaksinasi & Sterilisasi</a></li>
+                        <li><a href="#" class="text-decoration-none text-dark">Pembedahan: Ringan, Besar, Tulang</a></li>
+                        <li><a href="#" class="text-decoration-none text-dark">Perawatan Gigi: Scaling & Pemasangan Chip</a></li>
+                        <li><a href="#" class="text-decoration-none text-dark">Ultrasonografi (USG) & Sitologi</a></li>
+                    </ul>
+                </div>
+                <!-- Quick Links -->
+                <div class="col-md-3">
+                    <h5 class="fw-bold">Quick Links</h5>
+                    <ul class="list-unstyled mt-3">
+                        <li><a href="#home" class="text-decoration-none text-dark">Home</a></li>
+                        <li><a href="#about" class="text-decoration-none text-dark">About</a></li>
+                        <li><a href="#services" class="text-decoration-none text-dark">Services</a></li>
+                        <li><a href="#grooming" class="text-decoration-none text-dark">Grooming</a></li>
+                        <li><a href="#visit" class="text-decoration-none text-dark">Visit</a></li>
+                        <li><a href="#gallery" class="text-decoration-none text-dark">Gallery</a></li>
+                        <li><a href="#contact" class="text-decoration-none text-dark">Contact Us</a></li>
+                    </ul>
+                </div>
+                <!-- Have a Question -->
+                <div class="col-md-3">
+                    <h5 class="fw-bold">Have a Questions?</h5>
+                    <ul class="list-unstyled mt-3">
+                        <li>
+                            <i class="bi bi-geo-alt-fill text-danger"></i>
+                            <span>Peta Barat No.44, RT.10/RW.11, Pegadungan, Kec. Benda, Kota Jakarta Barat, Daerah Khusus Ibukota Jakarta 11830</span>
+                        </li>
+                        <li class="mt-3">
+                            <i class="bi bi-telephone-fill text-success"></i>
+                            <a href="tel:02154317233" class="text-decoration-none text-dark">021 543 17233</a>
+                        </li>
+                        <li class="mt-3">
+                            <i class="bi bi-instagram text-danger"></i>
+                            <a href="https://instagram.com/wcarevetclinic" class="text-decoration-none text-dark">@wcarevetclinic</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,140 @@
+/* General Styles */
+
+body {
+    scroll-behavior: smooth;
+    margin: 0;
+    /* Menghapus margin default */
+    padding: 0;
+    /* Menghapus padding default */
+}
+
+
+/* Hero Section Styling */
+
+
+/* Hero Section */
+
+.hero-wrap {
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    /* Mengatur agar hero section setinggi viewport */
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    /* Overlay hitam dengan transparansi */
+    z-index: 1;
+}
+
+.hero-wrap .container {
+    position: relative;
+    z-index: 2;
+    /* Konten di atas overlay */
+}
+
+
+/* Overlay efek gelap agar teks terlihat jelas */
+
+.hero-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Lapisan gelap transparan */
+    z-index: 1;
+}
+
+.hero-section .container {
+    position: relative;
+    z-index: 2;
+    /* Teks dan tombol di atas overlay */
+}
+
+
+/* Responsive Padding */
+
+@media (max-width: 768px) {
+    .hero-section {
+        height: 70vh;
+    }
+}
+
+
+/* Atur logo lebih besar tanpa mempengaruhi navbar */
+
+.logo {
+    height: 200px;
+    /* Atur tinggi logo */
+    max-height: 100%;
+    /* Batasi agar logo tidak keluar dari navbar */
+}
+
+
+/* Jaga tinggi navbar tetap proporsional */
+
+
+/* Navbar */
+
+.navbar {
+    position: sticky;
+    /* Menempel di bagian atas */
+    top: 0;
+    z-index: 1050;
+    /* Membuat navbar di atas elemen lain */
+}
+
+
+/* Dropdown */
+
+.navbar .dropdown-menu {
+    position: absolute;
+    z-index: 1060;
+    /* Agar menu dropdown berada di atas semua elemen */
+}
+
+.icon {
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card {
+    border-radius: 15px;
+}
+
+footer h5 {
+    border-bottom: 2px solid #ff0066;
+    /* Garis merah muda di bawah judul */
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+footer ul li {
+    margin-bottom: 8px;
+}
+
+footer ul li a:hover {
+    color: #ff0066;
+    /* Warna hover merah muda */
+    text-decoration: underline;
+}
+
+footer img {
+    max-width: 150px;
+    /* Ukuran maksimum logo */
+    height: auto;
+}
